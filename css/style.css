@@ -17,6 +17,7 @@ a{
 ul{
   margin: 0;
   padding: 0;
+  list-style:none;
 }
 
  body{
@@ -39,9 +40,18 @@ nav{display: block;}
 
 nav a{
   background: white;
-  margin-left: 80px;
+  margin-left: 40px;
   padding: 4px 20px;
+  font-weight: bold;
+  transition: all linear .3s;
+  display: inline-block;
 }
+
+nav a:hover{
+  color: #7275C1;
+  transform: scale(1.2);
+}
+
 
 .hero{
   height: 480px;
@@ -49,6 +59,25 @@ nav a{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.hero a{
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  }
+
+.hero a:hover i{
+  opacity: 100%;
+  transform: translate(0,0);
+}
+
+.hero a i{
+  opacity: 0;
+  transition: all linear .5s;
+  transform: translate(-10px,10px);
+  margin-left: 10px;
+
 }
 
 .container{width: 60%;}
@@ -67,13 +96,6 @@ nav a{
   transform: scale(1.5);
 }
 
-.hero a{
-  font-size: 24px;
-  font-weight: bold;
-  font-style: italic;
-}
-
-
 article{
   height: 660px;
   display: flex;
@@ -84,7 +106,10 @@ article{
   /* border: solid 1px green; */
 }
 
-.description{width: 347px;}
+.description{
+  width: 347px;
+  z-index: 30;
+}
 
 h2{
   font-size: 40px;
@@ -104,6 +129,27 @@ h2{
 .description a:hover .fad{
   transform: translateX(10px);
 }
+
+.description li{
+  font-size: 12px;
+  font-weight: bold;
+  background: #C9DBD9;
+  border-radius: 53px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 10px;
+  margin-right: 10px;
+}
+
+.a02 li{
+  background: #D2BCE8;
+}
+
+.a03 li{
+  background: #FBD7A1;
+}
+
+
 
 .preview{
   width: 733px;
