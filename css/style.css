@@ -120,10 +120,16 @@ h2{
   font-weight: bold;
   text-align: right;
   display: block;
+  color: #222;
+  transition: all linear .2s;
 }
 
 .description a .fad{
   transition: all linear .2s;
+}
+
+.description a:hover{
+  color: #40AFFE;
 }
 
 .description a:hover .fad{
@@ -148,8 +154,6 @@ h2{
 .a03 li{
   background: #FBD7A1;
 }
-
-
 
 .preview{
   width: 733px;
